@@ -6,10 +6,12 @@ import Inicio from './components/Inicio';
 import Sobre from './components/Sobre';
 import Informacoes from './components/Informacoes';
 import Contato from './components/Contato';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Switch>
         <Route path='/' exact component={Inicio} />
         <Route path='/sobre' exact component={Sobre} />
